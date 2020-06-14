@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Mojoohoi</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Нүүр</string>
+    <string name="menu_history">Түүх</string>
+    <string name="menu_basket">Сагс</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="welcome_back">Сайн уу</string>
+    <string name="skip">Алгасах</string>
+    <string name="login">Нэвтрэх</string>
+    <string name="user_name">Нэвтрэх нэр</string>
+    <string name="password">Нууц үг</string>
+    <string name="sign_up">Бүртгүүлэх</string>
+    <string name="forget_password">Нууц үгээ мартсан?</string>
+    <string name="order">Захиалах</string>
+</resources>

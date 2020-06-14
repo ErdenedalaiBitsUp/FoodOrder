@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:padding="@dimen/margin_16dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/menu_home_image"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorSplashText"
+            android:src="@drawable/ic_home"
+            android:tint="@color/colorSplashText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_toEndOf="@+id/menu_home_image"
+            android:layout_toRightOf="@+id/menu_home_image"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/menu_home"
+            android:textColor="@color/colorSplashText"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_16dp">
+
+        <ImageView
+            android:id="@+id/menu_home_history"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorSplashText"
+            android:src="@drawable/ic_history"
+            android:tint="@color/colorSplashText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_toEndOf="@+id/menu_home_history"
+            android:layout_toRightOf="@+id/menu_home_history"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/menu_history"
+            android:textColor="@color/colorSplashText"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_16dp">
+
+        <ImageView
+            android:id="@+id/menu_home_basket"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorSplashText"
+            android:src="@drawable/ic_basket"
+            android:tint="@color/colorSplashText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_toEndOf="@+id/menu_home_basket"
+            android:layout_toRightOf="@+id/menu_home_basket"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/menu_basket"
+            android:textColor="@color/colorSplashText"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

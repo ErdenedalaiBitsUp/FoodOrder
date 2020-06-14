@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/image_chicken" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center_horizontal"
+            android:text="Тахиа"
+            android:textColor="@color/colorBlackText"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTitle"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center_horizontal"
+            android:text="Тахиатай будаа"
+            android:textColor="@color/colorBlackText"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textDescription"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center_horizontal"
+            android:text="Үнэ : 15000"
+            android:textColor="@color/colorBlackText"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginRight="@dimen/margin_16dp"
+            android:tint="@color/colorPrimary" />
+    </RelativeLayout>
+</LinearLayout>
