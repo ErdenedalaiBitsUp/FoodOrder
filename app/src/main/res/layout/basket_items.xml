@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="@dimen/margin_16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/image_chicken"
+        android:scaleType="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Хоолны нэр : Тахиа"
+            android:textColor="@color/colorBlackText"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Хоолны орц : Тахианы мах будаа"
+            android:textColor="@color/colorBlackText"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Үнэ : 15000"
+            android:textColor="@color/colorBlackText"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/quantityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Тоо ширхэг"
+                android:textColor="@color/colorBlackText"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinnerQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/quantityTextView"
+                android:layout_toRightOf="@+id/quantityTextView"
+                android:background="@drawable/spinner_back"
+                android:entries="@array/items"
+                android:gravity="center"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -20,4 +20,5 @@
     <string name="sign_up">Бүртгүүлэх</string>
     <string name="forget_password">Нууц үгээ мартсан?</string>
     <string name="order">Захиалах</string>
+    <string name="spin">spin</string>
 </resources>

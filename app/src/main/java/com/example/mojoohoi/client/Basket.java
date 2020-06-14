@@ -3,10 +3,11 @@ package com.example.mojoohoi.client;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Basket {
     private static Basket basket = new Basket();
-    private ArrayList<OrderItem> orderItems = new ArrayList<>();
+    private static ArrayList<OrderItem> orderItems = new ArrayList<>();
 
     private Basket() {
     }
@@ -20,11 +21,20 @@ public class Basket {
     }
 
     public void outOfTheBasket(FoodItem foodItem) {
-        for (OrderItem orderItem : this.orderItems) {
-            if (orderItem.getFoodItem().getId().equals(foodItem.getId())) {
-                this.orderItems.remove(orderItem);
-            }
+        Iterator<OrderItem> iter = this.orderItems.iterator();
+
+        while (iter.hasNext()) {
+            OrderItem orderItem = iter.next();
+
+            if (orderItem.getFoodItem().getId().equals(foodItem.getId()))
+                iter.remove();
         }
+//
+//        for (OrderItem orderItem : this.orderItems) {
+//            if (orderItem.getFoodItem().getId().equals(foodItem.getId())) {
+//                this.orderItems.remove(orderItem);
+//            }
+//        }
     }
 
     public ArrayList<OrderItem> getOrder() {

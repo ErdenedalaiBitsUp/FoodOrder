@@ -8,7 +8,7 @@ import android.widget.GridView
 import androidx.fragment.app.Fragment
 import com.example.mojoohoi.R
 import com.example.mojoohoi.client.FoodItem
-import com.example.mojoohoi.view.basket.adapter.FoodAdapter
+import com.example.mojoohoi.view.home.adapter.FoodAdapter
 import java.util.ArrayList
 
 class HomeFragment : Fragment() {
@@ -30,26 +30,30 @@ class HomeFragment : Fragment() {
         val items: ArrayList<FoodItem> = ArrayList()
         var foodItem = FoodItem()
         foodItem.id = "1"
-        foodItem.name = "1"
-        foodItem.description = "1"
+        foodItem.name = "Тахиа"
+        foodItem.description = "Тахиа будаа"
+        foodItem.amount = 15000.0
         items.add(foodItem)
 
         foodItem = FoodItem()
         foodItem.id = "2"
-        foodItem.name = "1"
-        foodItem.description = "1"
+        foodItem.name = "Тахиа"
+        foodItem.description = "Тахиа будаа"
+        foodItem.amount = 15000.0
         items.add(foodItem)
 
         foodItem = FoodItem()
         foodItem.id = "3"
-        foodItem.name = "1"
-        foodItem.description = "1"
+        foodItem.name = "Тахиа"
+        foodItem.description = "Тахиа будаа"
+        foodItem.amount = 15000.0
         items.add(foodItem)
 
         foodItem = FoodItem()
         foodItem.id = "4"
-        foodItem.name = "1"
-        foodItem.description = "1"
+        foodItem.name = "Тахиа"
+        foodItem.description = "Тахиа будаа"
+        foodItem.amount = 15000.0
         items.add(foodItem)
 
         return items;
