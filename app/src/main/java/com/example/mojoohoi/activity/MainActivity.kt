@@ -3,16 +3,14 @@ package com.example.mojoohoi.activity
 import android.os.Bundle
 import android.view.Gravity
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.mojoohoi.R
-import com.example.mojoohoi.view.basket.BasketFragment
 import com.example.myapplication.activity.BaseActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
@@ -34,20 +32,23 @@ class MainActivity : BaseActivity() {
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
-            val fragmentManager: FragmentManager = supportFragmentManager
-            val fragmentTransaction: FragmentTransaction =
-                fragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.nav_host_fragment, BasketFragment())
-            fragmentTransaction.commit()
+//            val fragmentManager: FragmentManager = supportFragmentManager
+//            val fragmentTransaction: FragmentTransaction =
+//                fragmentManager.beginTransaction()
+//            fragmentTransaction.replace(R.id.nav_host_fragment, BasketFragment())
+//            fragmentTransaction.commit()
+            Toast.makeText(this,"Сагс руу шидэгдэх",Toast.LENGTH_LONG).show();
         }
         val drawerLayout: Advance3DDrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
+//        val badge: TextView = findViewById(R.id.badge)//badge udirdah
+//        badge.setText(Basket.getInstance().order.size)
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_home,
-                R.id.nav_gallery,
-                R.id.nav_slideshow
+                R.id.nav_history,
+                R.id.nav_basket
             ), drawerLayout
         )
 

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.GridView
 import androidx.fragment.app.Fragment
 import com.example.mojoohoi.R
-import com.example.mojoohoi.client.FoodItem
+import com.example.mojoohoi.client.dto.FoodItem
 import com.example.mojoohoi.view.home.adapter.FoodAdapter
 import java.util.ArrayList
 
@@ -26,7 +26,7 @@ class HomeFragment : Fragment() {
         return root
     }
 
-    private fun fillList(): ArrayList<FoodItem> {//static items use
+    private fun fillList(): ArrayList<FoodItem> {//static item - уудаар дүүргэлээ
         val items: ArrayList<FoodItem> = ArrayList()
         var foodItem = FoodItem()
         foodItem.id = "1"

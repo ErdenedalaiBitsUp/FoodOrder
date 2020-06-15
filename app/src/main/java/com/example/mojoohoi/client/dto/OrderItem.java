@@ -1,10 +1,11 @@
-package com.example.mojoohoi.client;
+package com.example.mojoohoi.client.dto;
 
 
 public class OrderItem {
     private FoodItem foodItem;
     private int count;
     private String date;
+    private User user;
 
     public FoodItem getFoodItem() {
         return foodItem;
@@ -28,5 +29,13 @@ public class OrderItem {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }

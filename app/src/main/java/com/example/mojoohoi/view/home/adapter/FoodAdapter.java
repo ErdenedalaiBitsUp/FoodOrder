@@ -1,7 +1,6 @@
 package com.example.mojoohoi.view.home.adapter;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,9 +8,9 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 import com.example.mojoohoi.R;
-import com.example.mojoohoi.client.Basket;
-import com.example.mojoohoi.client.FoodItem;
-import com.example.mojoohoi.client.OrderItem;
+import com.example.mojoohoi.client.dto.Basket;
+import com.example.mojoohoi.client.dto.FoodItem;
+import com.example.mojoohoi.client.dto.OrderItem;
 
 import java.util.ArrayList;
 
@@ -49,12 +48,6 @@ public class FoodAdapter extends BaseAdapter {
         } else {
             imageView.setImageResource(R.drawable.ic_add);
         }
-
-        Log.e("asd", "getView: " + Basket.getInstance().isItemHaveBasket(items.get(position)));
-        for (OrderItem orderItem : Basket.getInstance().getOrder()) {
-            Log.e("asd", "getView: " + orderItem.getFoodItem().getId());
-        }
-
 
         view.setOnClickListener(v -> {
             if (Basket.getInstance().isItemHaveBasket(items.get(position))) {

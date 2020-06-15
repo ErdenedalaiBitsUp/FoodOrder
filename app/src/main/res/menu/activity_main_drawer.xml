@@ -10,11 +10,11 @@
             android:iconTint="@color/colorSplashText"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_history"
             android:icon="@drawable/ic_history"
             android:title="@string/menu_history" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_basket"
             android:icon="@drawable/ic_basket"
             android:title="@string/menu_basket" />
     </group>

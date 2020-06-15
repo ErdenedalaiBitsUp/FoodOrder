@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorBackground"
-    tools:context=".view.basket.BasketFragment">
+    android:layout_height="match_parent">
+    <!--    хаягийн мэлээлэл авдаг болгох-->
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/basketList"
-        android:layout_width="wrap_content"
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/userNameEditText"
+        style="@style/TextInput"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_40dp" />
+        android:hint="@string/address_add"
+        android:singleLine="false"
+        android:textColorHint="@color/colorBlackText" />
 
     <Button
         android:id="@+id/orderButton"
@@ -23,7 +24,7 @@
         android:layout_marginBottom="@dimen/margin_16dp"
         android:background="@drawable/button_drawable"
         android:fontFamily="@font/rubik_medium"
-        android:text="@string/order"
+        android:text="@string/order_end"
         android:textAllCaps="false"
         android:textColor="@color/colorWhiteText"
         android:textSize="16sp" />

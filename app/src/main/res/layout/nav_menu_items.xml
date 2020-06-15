@@ -19,19 +19,7 @@
             android:src="@drawable/ic_home"
             android:tint="@color/colorSplashText" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="@dimen/margin_16dp"
-            android:layout_marginLeft="@dimen/margin_16dp"
-            android:layout_toEndOf="@+id/menu_home_image"
-            android:layout_toRightOf="@+id/menu_home_image"
-            android:fontFamily="@font/rubik_regular"
-            android:text="@string/menu_home"
-            android:textColor="@color/colorSplashText"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+       1
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"

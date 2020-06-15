@@ -19,6 +19,9 @@
     <string name="password">Нууц үг</string>
     <string name="sign_up">Бүртгүүлэх</string>
     <string name="forget_password">Нууц үгээ мартсан?</string>
-    <string name="order">Захиалах</string>
+    <string name="order">Хаяг оруулах</string>
+    <string name="order_end">Захиалах</string>
     <string name="spin">spin</string>
+    <string name="back">буцах</string>
+    <string name="address_add">Хаягаа оруулна уу</string>
 </resources>

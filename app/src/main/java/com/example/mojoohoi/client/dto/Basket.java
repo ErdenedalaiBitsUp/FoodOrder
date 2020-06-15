@@ -1,4 +1,4 @@
-package com.example.mojoohoi.client;
+package com.example.mojoohoi.client.dto;
 
 import android.util.Log;
 
@@ -39,6 +39,10 @@ public class Basket {
 
     public ArrayList<OrderItem> getOrder() {
         return orderItems;
+    }
+
+    public void removeOrder() {
+        orderItems = new ArrayList<>();
     }
 
     public boolean isItemHaveBasket(FoodItem foodItem) {

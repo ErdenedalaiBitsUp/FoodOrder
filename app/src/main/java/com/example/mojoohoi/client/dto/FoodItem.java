@@ -1,4 +1,4 @@
-package com.example.mojoohoi.client;
+package com.example.mojoohoi.client.dto;
 
 public class FoodItem {
     private String id;
