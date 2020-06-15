@@ -18,7 +18,7 @@ class BasketFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.fragment_slideshow, container, false)
+        val root = inflater.inflate(R.layout.fragment_basket, container, false)
         val recycleView: RecyclerView = root.findViewById(R.id.basketList)
         recycleView.adapter = BasketAdapter(context)
         recycleView.setHasFixedSize(true)
